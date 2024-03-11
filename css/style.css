@@ -1,0 +1,100 @@
+
+* {
+    margin: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#gridwrapper {
+    display: grid;
+    grid-template-columns: 400px 300px 300px 3fr;
+    grid-template-rows: 50px 300px 300px 300px 300px;
+    grid-template-areas: 
+    "hea hea hea hea"
+    "se1 se2 se2 se3"
+    "se1 se2 se2 se4"
+    "se5 se5 se6 se6"
+    "se7 se7 se6 se6"
+    ;
+}
+
+header { 
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+main {
+    background: gray;
+    color: black;
+    align-items: center;
+    justify-items: center;
+
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: rgb(95, 38, 151);
+}
+
+
+
+#section1 {
+    grid-area: se1;
+    /* background-image: url("../IMG/amazonas.jpg"); */
+    /* background-size: cover; */
+    background-color: indianred;
+}
+
+#section2 {
+    grid-area: se2;
+    /* background-image: url(""); */
+    /* background-size: cover; */
+    background-color: aquamarine;
+}
+
+#section3 {
+    grid-area: se3;
+    /* background-image: url("../IMG/hawaii.jpg");
+    background-size: cover; */
+    background-color: cadetblue;
+}
+
+#section4 {
+    grid-area: se4;
+    /* background-image: url("../IMG/new_york.jpg");
+    background-size: cover; */
+    background-color: rgb(111, 78, 113);
+}
+
+#section5 {
+    grid-area: se5;
+    /* background-image: url("../IMG/rio.jpg");
+    background-size: cover; */
+    background-color: honeydew;
+}
+
+#section6 {
+    grid-area: se6;
+    /* background-image: url("../IMG/sahara.jpg");
+    background-size: cover; */
+    background-color: coral;
+}
+
+#section7 {
+    grid-area: se7;
+    /* background-image: url("../IMG/water.jpg");
+    background-size: cover; */
+    background-color: sandybrown;
+}
